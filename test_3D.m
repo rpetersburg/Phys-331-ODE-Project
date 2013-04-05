@@ -33,6 +33,57 @@ plot3(x(:,1),x(:,2),x(:,3))
 xlabel('x')
 ylabel('y')
 zlabel('z')
-title('Lorenz System Solution')
+title('Lorenz System Solution (x,y,z)')
 grid on
 axis square
+
+clc
+fprintf(1,'Press enter to continue...\n');
+pause
+
+subplot(2,2,1)
+plot(x(:,1),x(:,2))
+xlabel('x')
+ylabel('y')
+title('Lorenz System (x,y)')
+grid on
+
+subplot(2,2,2)
+plot(x(:,2),x(:,3))
+xlabel('y')
+ylabel('z')
+title('Lorenz System (y,z)')
+grid on
+
+subplot(2,2,3)
+plot(x(:,1),x(:,3))
+xlabel('x')
+ylabel('z')
+title('Lorenz System (x,z)')
+grid on
+
+clc
+fprintf(1,'Press enter to continue...\n');
+pause
+
+subplot(2,2,1)
+plot(t,x(:,1))
+xlabel('t')
+ylabel('x')
+title('Lorenz System x(t)')
+grid on
+
+subplot(2,2,2)
+plot(t,x(:,2))
+xlabel('t')
+ylabel('y')
+title('Lorenz System y(t)')
+grid on
+
+subplot(2,2,3)
+plot(t,x(:,3))
+xlabel('t')
+ylabel('z')
+title('Lorenz System z(t)')
+grid on
+
