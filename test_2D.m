@@ -4,7 +4,6 @@ close all
 
 
 nstep = 10000;   % number of steps
-iinteg= 0;    % type of integrator
 x0    = 0.0;  % starting x.
 y0    = -1.0; % starting y.
 x1    = 3.0;  % end x.
