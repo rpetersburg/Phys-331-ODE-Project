@@ -11,7 +11,8 @@ disp('Begin Recording')
 recordblocking(recObj, time);
 disp('End of Recording.');
 recording=getaudiodata(recObj);
-%}
+%} 
+
 for r=10:10:240
 %%%%%
 %%%%%   Coupled Differential Equation Solver
