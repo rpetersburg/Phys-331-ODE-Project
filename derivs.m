@@ -1,14 +1,16 @@
-function dy = derivs(t,y,s,r)
-%Coupled System of 6 ODEs
+function dx = derivs(t,x,s,r)
+
+%Coupled Sxstem of 6 ODEs
 sigma=10;
 b=8/3;
-dy=zeros(6,1);
-dy(1)=sigma*(y(2)-y(1));
-dy(2)=r*y(1)-y(2)-y(1)*y(3);
-dy(3)=y(1)*y(2)-b*y(3);
-dy(4)=sigma*(y(5)-y(4));
-dy(5)=r*(y(1)+s(t))-y(5)-(y(1)+s(t))*y(6);
-dy(6)=(y(1)+s(t))*y(5)-b*y(6);
+dx=zeros(6,1);
+
+dx(1)=sigma*(x(2)-x(1));
+dx(2)=r*x(1)-x(2)-x(1)*x(3);
+dx(3)=x(1)*x(2)-b*x(3);
+dx(4)=sigma*(x(5)-x(4));
+dx(5)=r*(x(1)+s(t))-x(5)-(x(1)+s(t))*x(6);
+dx(6)=(x(1)+s(t))*x(5)-b*x(6);
 
 
 end

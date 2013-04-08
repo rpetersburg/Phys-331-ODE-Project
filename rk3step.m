@@ -1,15 +1,15 @@
 % input:
-%   y      : initial y value, scalar
+%   x      : initial x value, scalar
 %   f      : inline function (RHS of ODE)
-%   x      : starting x.
+%   t      : starting t.
 %   h      : stepsize
 % output:
-%   y      : updated result
+%   x      : updated result
 %---------------------------------------
 
 
 
-function [y] = rk3step(y,f,x,h)
+function [x] = rk3step(x,f,t,h)
 c1=1/6;
 c2=4/6;
 c3=1/6;
@@ -20,11 +20,11 @@ b31=-1;
 b32=2;
 
 
-K1=f(x,y);
-K2=f((x+a2*h),(y+b21*K1*h));
-K3=f((x+a3*h),(y+b31*K1*h+b32*K2*h));
+K1=f(t,x);
+K2=f((t+a2*h),(x+b21*K1*h));
+K3=f((t+a3*h),(x+b31*K1*h+b32*K2*h));
 
-y=y+(c1*K1+c2*K2+c3*K3)*h;
+x=x+(c1*K1+c2*K2+c3*K3)*h;
 
 end
 
