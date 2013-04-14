@@ -1,6 +1,6 @@
 function dx = derivs(t,x,s,r)
 
-%Coupled Sxstem of 6 ODEs
+%Coupled System of 6 ODEs
 sigma=10;
 b=8/3;
 dx=zeros(6,1);
