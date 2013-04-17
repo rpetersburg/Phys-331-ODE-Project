@@ -1,15 +1,19 @@
-% Final Project
-% function [t,x] = rk4adapt(t,x,f)
-%
-% Advancing solution x one single RK4 adaptive step.
-%
+% Final Project - Chaos in ODEs
+% Donnie Mattingly and Ryan Petersburg
+% 
+% Part 2 -- Runga-Kutta Adaptive Method
+%======================================%
 % input:
 %   x      : initial x value, scalar
 %   f      : inline function (RHS of ODE)
 %   t      : starting t.
+%   h      : previous stepsize
+%   tol    : tolerance for stepsize
+%   r      : lorenz r-value
 % output:
 %   x      : updated x-value
 %   t      : updated t-value
+%   h      : used stepsize
 %---------------------------------------
 
 function [t,x,h] = rk4adapt(x,f,t,h,tol,r)

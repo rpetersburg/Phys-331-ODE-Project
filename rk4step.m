@@ -1,9 +1,14 @@
-
+% Final Project - Chaos in ODEs
+% Donnie Mattingly and Ryan Petersburg
+% 
+% Part 2 -- Runga-Kutta 4 Method
+%====================================%
 % input:
 %   x      : initial x value, scalar
 %   f      : inline function (RHS of ODE)
 %   t      : starting t.
 %   h      : stepsize
+%   r      : lorenz r-value
 % output:
 %   x      : updated result
 %---------------------------------------

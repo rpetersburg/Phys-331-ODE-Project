@@ -1,15 +1,20 @@
+% Final Project - Chaos in ODEs
+% Donnie Mattingly and Ryan Petersburg
+% 
+% Part 2 -- Runga-Kutta 3 Method
+%====================================%
 % input:
 %   x      : initial x value, scalar
 %   f      : inline function (RHS of ODE)
 %   t      : starting t.
 %   h      : stepsize
+%   r      : lorenz r-value
 % output:
 %   x      : updated result
 %---------------------------------------
 
-
-
 function [x] = rk3step(x,f,t,h,r)
+
 c1=1/6;
 c2=4/6;
 c3=1/6;
